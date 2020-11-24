@@ -4,12 +4,12 @@ include 'function.php';
 if (isset($_POST['submit'])) {
   if (addMahasiswa($_POST) > 0) {
     echo "<script>
-            alert('data berhasil disimpan');
+            alert('Data berhasil disimpan');
           </script>";
     header('Location: index.php');
   } else {
     echo "<script>
-            alert('data gagal disimpan');
+            alert('Data gagal disimpan');
           </script>";
   }
 }

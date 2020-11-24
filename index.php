@@ -11,7 +11,10 @@ $mahasiswa = getAllMahasiswa();
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home</title>
+  <!-- tailwind -->
   <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
 </head>
 
 <body>
@@ -38,13 +41,13 @@ $mahasiswa = getAllMahasiswa();
             <td class="border text-center px-8 py-3"><?= $mhs['prodi']; ?></td>
             <td class="border text-center py-3">
               <a href="info.php?id=<?= $mhs['mhs_id']; ?>" class="bg-blue-500 hover:bg-tael-600 focus:outline-none focus:shadow-outline py-1 px-3 mx-1 rounded-md text-white">
-                Info
+                <i class="fa fa-info-circle"></i>
               </a>
               <a href="edit.php?id=<?= $mhs['mhs_id']; ?>" class="bg-yellow-500 hover:bg-tael-600 focus:outline-none focus:shadow-outline py-1 px-3 mx-1 rounded-md text-white">
-                Edit
+                <i class="fa fa-edit"></i>
               </a>
-              <a href="delete.php?id=<?= $mhs['mhs_id']; ?>" class="bg-red-500 hover:bg-tael-600 focus:outline-none focus:shadow-outline py-1 px-3 mx-1 rounded-md text-white">
-                Hapus
+              <a href="delete.php?id=<?= $mhs['mhs_id']; ?>" class="bg-red-500 hover:bg-tael-600 focus:outline-none focus:shadow-outline py-1 px-3 mx-1 rounded-md text-white" onclick="confirm('Hapus?')">
+                <i class="fa fa-trash"></i>
               </a>
             </td>
           </tr>

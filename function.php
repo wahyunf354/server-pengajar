@@ -65,3 +65,14 @@ function updateMahasiswa($data)
 
   return mysqli_affected_rows($conn);
 }
+
+function deleteMahasiswa($id)
+{
+  global $conn;
+
+  $query = "DELETE FROM tbl_mhs WHERE mhs_id='$id';";
+
+  mysqli_query($conn, $query);
+
+  return mysqli_affected_rows($conn);
+}
