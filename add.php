@@ -6,11 +6,9 @@ if (isset($_POST['submit'])) {
     echo "<script>
             alert('Data berhasil disimpan');
           </script>";
-    header('Location: index.php');
+    header('Location: index.php?message=success');
   } else {
-    echo "<script>
-            alert('Data gagal disimpan');
-          </script>";
+    $error = "error : " . mysqli_error($conn);
   }
 }
 
@@ -34,13 +32,20 @@ if (isset($_POST['submit'])) {
       </div>
       <div class="w-1/2 py-10 px-20">
         <h1 class="text-5xl font-bold mb-5 text-white">Tambah Mahasiswa</h1>
+
+        <?php if ($error) : ?>
+          <div class="bg-red-200 relative text-red-500 py-3 px-3 rounded-lg">
+            Data gagal disimpan
+          </div>
+        <?php endif; ?>
+
         <form action="" method="post">
           <label class="text-white font-light">NIM</label>
-          <input type='text' name="nim" placeholder="Enter NIM" class="w-full mt-2 mb-6 px-3 py-1 border rounded-lg text-md text-gray-700 focus:outline-none" />
+          <input type='text' name="nim" maxlength="10" placeholder="Enter NIM" class="w-full mt-2 mb-6 px-3 py-1 border rounded-lg text-md text-gray-700 focus:outline-none" required />
           <label class="text-white font-light">Nama</label>
-          <input type='text' name="nama" placeholder="Enter nama" class="w-full mt-2 mb-6 px-3 py-1 border rounded-lg text-md text-gray-700 focus:outline-none" />
+          <input type='text' name="nama" placeholder="Enter nama" class="w-full mt-2 mb-6 px-3 py-1 border rounded-lg text-md text-gray-700 focus:outline-none" required />
           <label class="text-white font-light">Prodi</label>
-          <input type='text' name="prodi" placeholder="Enter prodi" class="w-full mt-2 mb-6 px-3 py-1 border rounded-lg text-md text-gray-700 focus:outline-none" />
+          <input type='text' name="prodi" placeholder="Enter prodi" class="w-full mt-2 mb-6 px-3 py-1 border rounded-lg text-md text-gray-700 focus:outline-none" required />
           <button type="submit" name="submit" class="bg-white py-2 px-4 rounded-md text-indigo-500 hover:bg-indigo-200 hover:shadow-inner"> Simpan </button>
         </form>
       </div>
