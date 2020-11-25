@@ -1,14 +1,5 @@
 <?php
-$server = "localhost";
-$user = "wahyu";
-$pass = "wahyu";
-$db = "db_tugas_p11";
-
-$conn = mysqli_connect($server, $user, $pass, $db);
-
-if (!$conn) {
-  die("error connection " . mysqli_connect_error());
-}
+include 'config/connect.php';
 
 function getAllMahasiswa()
 {
@@ -71,7 +62,6 @@ function deleteMahasiswa($id)
   global $conn;
 
   $query = "DELETE FROM tbl_mhs WHERE mhs_id='$id';";
-
   mysqli_query($conn, $query);
 
   return mysqli_affected_rows($conn);
