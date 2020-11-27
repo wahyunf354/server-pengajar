@@ -1,15 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php include 'layout/header.php' ?>
+<?php include 'layout/nav.php' ?>
+<?php include 'layout/sidebar.php' ?>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dashboard</title>
-</head>
+<!-- Content -->
 
-<body>
-  <a href="mahasiswa/index.php">mahasiswa</a>
-  <a href="mata_kuliah/index.php">mata kuliah</a>
-</body>
 
-</html>
+
+<!-- end Content -->
+
+<?php include 'layout/footer.php' ?>
