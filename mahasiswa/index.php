@@ -58,14 +58,14 @@ if ($message == 'success') {
           <td class="border text-center px-8 py-3"><?= $mhs['nama']; ?></td>
           <td class="border text-center px-8 py-3"><?= $mhs['prodi']; ?></td>
           <td class="border text-center py-3">
-            <a href="info.php?id=<?= $mhs['mhs_id']; ?>" class="bg-blue-500 hover:bg-tael-600 focus:outline-none focus:shadow-outline py-1 px-3 mx-1 rounded-md text-white">
-              <i class="fa fa-info-circle"></i>
+            <a href="info.php?id=<?= $mhs['mhs_id']; ?>" class="hover:text-blue-600 focus:outline-none focus:shadow-outline py-1 px-1 rounded-md text-white">
+              <i class="fill-current text-blue-500 material-icons">help</i>
             </a>
-            <a href="edit.php?id=<?= $mhs['mhs_id']; ?>" class="bg-yellow-500 hover:bg-tael-600 focus:outline-none focus:shadow-outline py-1 px-3 mx-1 rounded-md text-white">
-              <i class="fa fa-edit"></i>
+            <a href="edit.php?id=<?= $mhs['mhs_id']; ?>" class="hover:text-yellow-600 focus:outline-none focus:shadow-outline py-1 px-1 rounded-md text-white">
+              <i class="fill-current text-yellow-500 material-icons">edit</i>
             </a>
-            <a href="delete.php?id=<?= $mhs['mhs_id']; ?>" class="bg-red-500 hover:bg-tael-600 focus:outline-none focus:shadow-outline py-1 px-3 mx-1 rounded-md text-white" onclick="confirm('Hapus?')">
-              <i class="fa fa-trash"></i>
+            <a href="delete.php?id=<?= $mhs['mhs_id']; ?>" class=" hover:bg-tael-600 focus:outline-none focus:shadow-outline py-1 px-1 rounded-md text-white" onclick="confirm('Hapus?')">
+              <i class="fill-current text-red-500 material-icons">delete</i>
             </a>
           </td>
         </tr>

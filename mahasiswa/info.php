@@ -73,7 +73,7 @@ if (isset($_GET['id'])) {
                 </td>
                 <td class="text-center py-4">
                   <a href="edit_nilai.php?id=<?= $mhs['mhs_id']; ?>&nilai_id=<?= $n['nilai_id']; ?>"><span class="fill-current text-green-500 material-icons">edit</span></a>
-                  <a href="hapus_nilai.php?id=<?= $mhs['mhs_id']; ?>&nilai_id=<?= $n['nilai_id']; ?>"><span class="fill-current text-red-500 material-icons">highlight_off</span></a>
+                  <a href="hapus_nilai.php?id=<?= $mhs['mhs_id']; ?>&nilai_id=<?= $n['nilai_id']; ?>"> </a>
                 </td>
               </tr>
               <?php $no++; ?>
