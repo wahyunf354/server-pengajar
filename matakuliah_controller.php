@@ -66,3 +66,14 @@ function deleteMk($id)
 
   return mysqli_affected_rows($conn);
 }
+
+function getCountMk()
+{
+  global $conn;
+
+  $query = "SELECT COUNT(*) FROM tbl_mk";
+
+  $result = mysqli_query($conn, $query);
+
+  return mysqli_fetch_array($result)[0];
+}

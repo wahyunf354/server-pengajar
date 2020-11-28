@@ -66,3 +66,14 @@ function deleteMahasiswa($id)
 
   return mysqli_affected_rows($conn);
 }
+
+function getCountMhs()
+{
+  global $conn;
+
+  $query = "SELECT COUNT(*) FROM tbl_mhs";
+
+  $result = mysqli_query($conn, $query);
+
+  return mysqli_fetch_array($result)[0];
+}
