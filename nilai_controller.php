@@ -16,6 +16,21 @@ function getNilaiByMhs($id)
   return $rows;
 }
 
+function getNilaiByMk($id)
+{
+  global $conn;
+
+  $query = "SELECT tbl_nilai.nilai, tbl_nilai.nilai_id, tbl_mhs.nama FROM tbl_nilai INNER JOIN tbl_mhs ON tbl_nilai.mhs_id=tbl_mhs.mhs_id WHERE mk_id=$id";
+  $result = mysqli_query($conn, $query);
+
+  $rows = [];
+  while ($row = mysqli_fetch_assoc($result)) {
+    $rows[] = $row;
+  }
+
+  return $rows;
+}
+
 function addNilai($data)
 {
   global $conn;
@@ -60,4 +75,10 @@ function updateNilai($data)
 function deleteNilai($id)
 {
   global $conn;
+
+  $query = "DELETE FROM tbl_nilai WHERE nilai_id=$id";
+
+  mysqli_query($conn, $query);
+
+  return mysqli_affected_rows($conn);
 }

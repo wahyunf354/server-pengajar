@@ -38,6 +38,21 @@ if (isset($_GET['id'])) {
   <div class="px-5 flex-1">
     <div class="bg-white rounded-lg shadow-lg py-6">
       <div class="block overflow-x-auto mx-6">
+
+        <?php if ($_GET['message'] == 'successhapus') : ?>
+          <div class='bg-yellow-200 relative text-yellow-600 py-3 px-3 rounded-lg mb-3'>
+            Data berhasil dihapus
+          </div>
+        <?php elseif ($_GET['message'] == 'errorhapus') : ?>
+          <div class='bg-red-200 relative text-red-600 py-3 px-3 rounded-lg mb-3'>
+            Data bergagal dihapus
+          </div>
+        <?php elseif ($_GET['message'] == 'success') : ?>
+          <div class='bg-indigo-200 relative text-indigo-600 py-3 px-3 rounded-lg mb-3'>
+            Data berhasil disimpan
+          </div>
+        <?php endif; ?>
+
         <table class="w-full text-left rounded-lg">
           <thead>
             <tr class="text-gray-800 border border-b-0">

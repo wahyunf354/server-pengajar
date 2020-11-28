@@ -37,15 +37,15 @@ if ($message == 'success') {
 
   <?= $display; ?>
 
-  <a href="http://localhost/server-pengajar/mata_kuliah/add.php" class="bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded-sm text-white my-2">Tambah Mata Kuliah</a>
+  <a href="http://localhost/server-pengajar/mata_kuliah/add.php" class="bg-red-500 hover:bg-red-600 px-4 py-2 rounded-sm text-white my-2">Tambah Mata Kuliah</a>
   <table class="border-collapse table-auto border border-green-800 mt-3  w-full mb-10">
     <thead>
       <tr class="py-3">
-        <th class="border bg-indigo-200 px-8 py-4 ">No</th>
-        <th class="border bg-indigo-200 px-8 py-4 ">Kode Mata Kuliah</th>
-        <th class="border bg-indigo-200 px-8 py-4 ">Nama</th>
-        <th class="border bg-indigo-200 px-8 py-4 ">Semester</th>
-        <th class="border bg-indigo-200 px-8 py-4 ">Aksi</th>
+        <th class="border bg-red-200 px-8 py-4 ">No</th>
+        <th class="border bg-red-200 px-8 py-4 ">Kode Mata Kuliah</th>
+        <th class="border bg-red-200 px-8 py-4 ">Nama</th>
+        <th class="border bg-red-200 px-8 py-4 ">Semester</th>
+        <th class="border bg-red-200 px-8 py-4 ">Aksi</th>
       </tr>
     </thead>
     <tbody>
