@@ -2,7 +2,7 @@
 session_start();
 if (!isset($_SESSION['login'])) {
   header('Location: http://localhost/server-pengajar/login.php');
-  exit(0);
+  exit();
 }
 
 ?>

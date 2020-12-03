@@ -7,6 +7,7 @@ if (isset($_POST['submit'])) {
             alert('Data berhasil disimpan');
           </script>";
     header('Location: index.php?message=success');
+    exit();
   } else {
     $error = "error : " . mysqli_error($conn);
     var_dump(addMahasiswa($_POST));

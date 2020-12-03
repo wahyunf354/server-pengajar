@@ -12,6 +12,7 @@ if (isset($_POST['submit'])) {
   $result = addNilai($_POST);
   if ($result > 0) {
     header('Location: info.php?id=' . $_GET['id'] . '&message=success');
+    exit();
   } else {
     $message = true;
   }

@@ -7,7 +7,7 @@ include "matakuliah_controller.php";
 
 if (!isset($_SESSION['login'])) {
   header('Location: login.php');
-  exit(0);
+  exit();
 }
 
 ?>

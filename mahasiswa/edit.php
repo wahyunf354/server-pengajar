@@ -11,6 +11,7 @@ if (isset($_POST['submit'])) {
             alert('Data mahasiswa berhasil diubah');
           </script>";
     header('Location: index.php?message=success');
+    exit();
   } else {
     echo "<script>
             alert('Data mahasiswa gagal diubah');

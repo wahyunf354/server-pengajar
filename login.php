@@ -4,6 +4,7 @@ session_start();
 
 if ($_SESSION['login']) {
   header('Location: index.php');
+  exit();
 }
 
 if (isset($_GET['message'])) {
@@ -26,6 +27,7 @@ if (isset($_POST['submit'])) {
       $_SESSION['login'] = true;
       $_SESSION['username'] = $user['username'];
       header('Location: index.php');
+      exit();
     } else {
       $is_error = true;
     }

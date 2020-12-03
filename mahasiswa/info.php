@@ -1,6 +1,13 @@
 <?php
+session_start();
 include "../mahasiswa_controller.php";
 include "../nilai_controller.php";
+
+if (!isset($_SESSION['login'])) {
+  header('Location: http://localhost/server-pengajar/login.php');
+  exit();
+}
+
 if (isset($_GET['id'])) {
   $mhs = getByIdMahasiswa($_GET['id']);
   $nilai = getNilaiByMhs($_GET['id']);
@@ -14,11 +21,12 @@ if (isset($_GET['id'])) {
 <!-- Content -->
 
 <main class="pb-10 flex">
+
   <div class="px-5 flex-none">
-    <h4 class="text-xl font-bold text-gray-800">Info Mahasiswa</h4>
+    <h4 class="text-xl font-bold text-gray-800 text-center">Info Mahasiswa</h4>
     <table class="text-left">
       <tr class="border border-t-0 border-l-0 border-r-0">
-        <td class="px-4 py-3">Nama:</td>
+        <td class="px-4 py-3">Nama</td>
         <td class="w-min py-3">:</td>
         <td class="px-4 py-3"><?= $mhs['nama']; ?></td>
       </tr>

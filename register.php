@@ -4,13 +4,14 @@ include "user_controller.php";
 
 if ($_SESSION['login']) {
   header("Location: index.php");
+  exit();
 }
 
 if (isset($_POST['submit'])) {
   $result = register($_POST);
   if ($result > 0) {
     header("Location: login.php?message=success");
-    exit(0);
+    exit();
   } else {
     $is_error = true;
   }

@@ -7,10 +7,12 @@ if (isset($_GET['id'])) {
             alert('data berhasil dihapus');
           </script>";
     header('Location: index.php?message=successhapus');
+    exit();
   } else {
     echo "<script>
             alert('data gagal dihapus');
           </script>";
     header('Location: index.php?message=gagalhapus');
+    exit();
   }
 }
