@@ -77,3 +77,17 @@ function getCountMk()
 
   return mysqli_fetch_array($result)[0];
 }
+
+function getAllMkByMhsId() { 
+  global $conn;
+  $query = 'SELECT * FROM tbl_mk';
+
+  $result = mysqli_query($conn, $query);
+
+  $rows = [];
+  while ($row = mysqli_fetch_assoc($result)) {
+    $rows[] = $row;
+  };
+
+  return $rows;
+}

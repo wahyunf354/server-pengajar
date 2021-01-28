@@ -5,7 +5,7 @@ include "../nilai_controller.php";
 
 if (isset($_GET['id'])) {
   $mhs = getByIdMahasiswa($_GET['id']);
-  $mk = getAllMk();
+  $mk = getAllMkByMhsId();
 }
 
 if (isset($_POST['submit'])) {
