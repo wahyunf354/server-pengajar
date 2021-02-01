@@ -30,7 +30,7 @@ if (isset($_POST['submit'])) {
   <div class="h-screen bg-indigo-100  w-full mx-auto flex flex-col justify-center content-center">
     <div class="w-5/6 h-5/6 flex bg-indigo-400 mx-auto rounded-md shadow-xl">
       <div class="w-1/2 rounded-md">
-        <img src="http://47.254.247.28:85/server-pengajar/img/bg-tambah.jpg" alt="" class="w-full h-full rounded-l-md">
+        <img src="http://47.254.247.28:85/img/bg-tambah.jpg" alt="" class="w-full h-full rounded-l-md">
       </div>
       <div class="w-1/2 py-10 px-20">
         <h1 class="text-5xl font-bold mb-5 text-white">Tambah Mata Kuliah</h1>
