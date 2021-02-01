@@ -1,7 +1,7 @@
-<?php 
+<?php
 $server = "localhost";
-$user = "wahyu";
-$pass = "wahyu";
+$user = "fadil";
+$pass = "fadil";
 $db = "db_tugas_p11";
 
 $conn = mysqli_connect($server, $user, $pass, $db);

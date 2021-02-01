@@ -10,14 +10,14 @@
     </a>
 
     <div class="flex mx-4 px-3 rounded py-3 bg-red-500 mt-6 mb-3">
-      <a href="http://localhost/server-pengajar/mahasiswa/index.php" class="flex">
+      <a href="http://47.254.247.28:85/server-pengajar/mahasiswa/index.php" class="flex">
         <i class="material-icons fill-current text-gray-100">face</i>
         <div class="menu-text text-gray-100 ml-4">Mahasiswa</div>
       </a>
     </div>
 
     <div class="flex mx-4 px-3 rounded py-3 bg-red-500 mt-6 mb-3">
-      <a href="http://localhost/server-pengajar/mata_kuliah/index.php" class="flex">
+      <a href="http://47.254.247.28:85/server-pengajar/mata_kuliah/index.php" class="flex">
         <i class="material-icons fill-current text-gray-100">class</i>
         <div class="menu-text text-gray-100 ml-4">Mata Kuliah</div>
       </a>

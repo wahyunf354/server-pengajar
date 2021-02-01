@@ -37,7 +37,7 @@ if ($message == 'success') {
 
   <?= $display; ?>
 
-  <a href="http://localhost/server-pengajar/mata_kuliah/add.php" class="bg-red-500 hover:bg-red-600 px-4 py-2 rounded-sm text-white my-2">Tambah Mata Kuliah</a>
+  <a href="http://47.254.247.28:85/server-pengajar/mata_kuliah/add.php" class="bg-red-500 hover:bg-red-600 px-4 py-2 rounded-sm text-white my-2">Tambah Mata Kuliah</a>
   <table class="border-collapse table-auto border border-green-800 mt-3  w-full mb-10">
     <thead>
       <tr class="py-3">
@@ -57,14 +57,14 @@ if ($message == 'success') {
           <td class="border text-center px-8 py-3"><?= $mk['nama_mk']; ?></td>
           <td class="border text-center px-8 py-3"><?= $mk['semester']; ?></td>
           <td class="border text-center py-3">
-            <a href="http://localhost/server-pengajar/mata_kuliah/info.php?id=<?= $mk['mk_id']; ?>" class="hover:text-blue-600 focus:outline-none focus:shadow-outline py-1 px-1 rounded-md text-white">
+            <a href="http://47.254.247.28:85/server-pengajar/mata_kuliah/info.php?id=<?= $mk['mk_id']; ?>" class="hover:text-blue-600 focus:outline-none focus:shadow-outline py-1 px-1 rounded-md text-white">
               <i class="fill-current text-blue-500 material-icons">help</i>
             </a>
-            <a href="http://localhost/server-pengajar/mata_kuliah/edit.php?id=<?= $mk['mk_id']; ?>" class="hover:text-yellow-600 focus:outline-none focus:shadow-outline py-1 px-1 rounded-md text-white">
+            <a href="http://47.254.247.28:85/server-pengajar/mata_kuliah/edit.php?id=<?= $mk['mk_id']; ?>" class="hover:text-yellow-600 focus:outline-none focus:shadow-outline py-1 px-1 rounded-md text-white">
               <i class="fill-current text-yellow-500 material-icons">edit</i>
 
             </a>
-            <a href="http://localhost/server-pengajar/mata_kuliah/delete.php?id=<?= $mk['mk_id']; ?>" class="hover:text-red-600 focus:outline-none focus:shadow-outline py-1 px-1 rounded-md text-white" onclick="confirm('Hapus?')">
+            <a href="http://47.254.247.28:85/server-pengajar/mata_kuliah/delete.php?id=<?= $mk['mk_id']; ?>" class="hover:text-red-600 focus:outline-none focus:shadow-outline py-1 px-1 rounded-md text-white" onclick="confirm('Hapus?')">
               <i class="fill-current text-red-500 material-icons">delete</i>
             </a>
           </td>

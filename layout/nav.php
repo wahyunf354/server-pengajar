@@ -2,7 +2,7 @@
 session_start();
 if (isset($_POST['submit'])) {
   session_destroy();
-  header('Location: http://localhost/server-pengajar/login.php');
+  header('Location: http://47.254.247.28:85/server-pengajar/login.php');
   exit();
 }
 ?>
